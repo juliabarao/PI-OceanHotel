@@ -1,0 +1,694 @@
+body{
+    background-color: linear-gradient(white 0%, orange 50%, #004bad9a 100%);
+}
+
+.logo{
+    height: 70px;
+
+}
+nav{
+    z-index: 5;
+    background-color: white;
+}
+
+
+.navbar-light .navbar-nav .nav-link{
+    color: #38b6ff;
+}
+
+.navbar-nav{
+    text-align: end;
+}
+
+.nav-link{
+    position: relative;
+    display: block;
+    margin: 0 10px;
+    padding: 5px 10px;
+    color: #38b6ff;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.nav-link:before{
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+    border: solid 2px #004bad9a;
+    border-width: 0 0 2px 2px;
+    opacity: 0;
+    transition: .5s;
+}
+
+.nav-link:hover:before{
+    bottom: -8px;
+    left: -8px;
+    opacity: 1;
+}
+
+.nav-link:after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    border: solid 2px #004bad9a;
+    border-width: 2px 2px 0 0;
+    opacity: 0;
+    transition: .5s;
+}
+
+.nav-link:hover:after{
+    top: -8px;
+    right: -8px;
+    opacity: 1;
+}
+
+.nav-link:hover{
+    background: #004bad9a;
+    color: black;
+}
+
+.w-100{
+    height: 100vh;
+}
+
+/* imagem de fundo */
+
+.story-img {
+    background-image: url("../img/OCEAN-PALACE.jpg");
+    height: 150px;
+    padding-bottom: 52%;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #1d140b;
+}
+
+/* BANNER */
+.banner {
+    background-image: url("../img/OCEAN-PALACE.jpg");
+    background-color: #000;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: table;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.banner__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: table;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner__container {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.banner__title {
+    font-size: 40px;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    animation: opacity 3s;
+}
+
+.banner__text {
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-style: italic;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 18px;
+    animation: opacity 3s;
+}
+
+/* destaque */
+
+.title-dest{
+    display: flex;
+    justify-content: center;
+}
+
+.title-dest{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color:#a7abaf82 ;
+    -webkit-background-clip: text;
+    background-image: url(https://stoleshnica-fasad.ru/wp-content/uploads/2016/03/Panel-iz-stekla-dlya-kukhni-panoramy-prirody-art.-0003-600x190.jpg);
+    animation: water 15s infinite;
+}
+
+@keyframes water {
+    from {background-position: left 0 top 0;}
+    to {background-position: left 1000px top 0;}
+}
+
+
+/* quartos */
+
+.auto-grid {
+    display: grid;
+    grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--auto-grid-min-size, 14rem), 1fr)
+    );
+    grid-gap: var(--auto-grid-gap, 0);
+    padding: 0;
+}
+
+.flow > * + * {
+    margin-top: var(--flow-space, 1em);
+}
+
+  /* Composition */
+.team {
+    --flow-space: 2em;
+}
+
+  /* Blocks */
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    aspect-ratio: 1/1;
+    position: relative;
+    padding: 1.5rem;
+    color: #ffffff;
+    backface-visibility: hidden;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.profile::before,
+.profile::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /*inset: 0;*/
+    top: 0;
+    left: 0;
+}
+
+.profile::before {
+    background: linear-gradient(
+        to top,
+        hsl(0 0% 0% / 0.79) 0%,
+        hsl(0 0% 0% / 0.787) 7.8%,
+        hsl(0 0% 0% / 0.779) 14.4%,
+        hsl(0 0% 0% / 0.765) 20.2%,
+        hsl(0 0% 0% / 0.744) 25.3%,
+        hsl(0 0% 0% / 0.717) 29.9%,
+        hsl(0 0% 0% / 0.683) 34.3%,
+        hsl(0 0% 0% / 0.641) 38.7%,
+        hsl(0 0% 0% / 0.592) 43.3%,
+        hsl(0 0% 0% / 0.534) 48.4%,
+        hsl(0 0% 0% / 0.468) 54.1%,
+        hsl(0 0% 0% / 0.393) 60.6%,
+        hsl(0 0% 0% / 0.31) 68.3%,
+        hsl(0 0% 0% / 0.216) 77.3%,
+        hsl(0 0% 0% / 0.113) 87.7%,
+        hsl(0 0% 0% / 0) 100%
+    );
+    transition: 300ms opacity linear;
+}
+
+.profile::after {
+    background: linear-gradient(
+        45deg,
+        hsl(5 97% 63% / 0.7) 0,
+        hsl(5 97% 63% / 0) 100%
+    );
+    opacity: 0;
+    transition: 300ms opacity linear;
+}
+
+.profile > * {
+    z-index: 1;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: -1;
+    object-fit: cover;
+    filter: grayscale(1);
+    transition: filter 200ms ease, transform 250ms linear;
+}
+
+.profile h2,
+.profile p {
+    transform: translateY(2ex);
+}
+
+.profile h2 {
+    font-size: 1.7rem;
+    line-height: 1.2;
+    font-weight: 900;
+    letter-spacing: 0.03ch;
+    transition: 300ms transform ease;
+}
+
+.profile p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.profile p {
+    opacity: 0;
+    transition: 300ms opacity linear, 300ms transform ease-in-out;
+}
+
+.profile:focus {
+    outline: 0.5rem solid white;
+    outline-offset: -0.5rem;
+}
+
+.profile:hover :is(h2, p),
+.profile:focus :is(h2, p) {
+    transform: none;
+}
+
+.profile:hover::after,
+.profile:focus::after,
+.profile:hover::before,
+.profile:focus::before {
+    opacity: 0.7;
+}
+
+.profile:hover p,
+.profile:focus p {
+    opacity: 1;
+    transition-delay: 200ms;
+}
+
+.profile:hover img,
+.profile:focus img {
+    filter: grayscale(0);
+    transform: scale(1.05) rotate(1deg);
+}
+
+/* serviços home */
+
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css';
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css';
+@import 'https://fonts.googleapis.com/css?family=Raleway:100,600';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300';
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 20px 0;
+    text-transform: none;
+    color: rgba(254, 82, 76, 1);
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+a:link,
+a:active,
+a:visited{
+    color:rgba(255,255,255,1);
+}
+
+a:hover{
+    color:rgba(255,255,255,0.6);
+}
+
+/* .gray {
+    color: #a5a5a5;
+} */
+
+.team{
+    margin:40px;
+    --flow-space: 2em;
+}
+
+.team-member {
+    margin: 15px 0;
+    padding: 0;
+}
+
+.team-member figure {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.team-member figure img {
+    min-width: 100%;
+}
+
+.team-member figcaption p {
+    font-size: 16px;
+}
+
+.team-member figcaption ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.team-member figcaption ul {
+    visibility: visible;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.team-member figcaption ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.team-member h4 {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.team-member figcaption {
+    padding: 50px;
+    color: transparent;
+    background-color: transparent;
+    position: absolute;
+    z-index: 996;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.team-member figure:hover figcaption {
+    visibility: visible;
+    color: #fff;
+    background: rgba(230, 78, 62, 0.9);
+    /* Primary color, can be changed via colors.css */
+    
+    height: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.team-member figure:hover figcaption ul li a:hover {
+    color: rgba(49, 49, 49, .97);
+}
+
+.team-member figure img {
+    -webkit-transform: scale(1) rotate(0) translateY(0);
+    -moz-transform: scale(1) rotate(0) translateY(0);
+    -o-transform: scale(1) rotate(0) translateY(0);
+    -ms-transform: scale(1) rotate(0) translateY(0);
+    transform: scale(1) rotate(0) translateY(0);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.team-member figure:hover img {
+    -webkit-transform: scale(1.1) rotate(1deg) translateY(12px);
+    -moz-transform: scale(1.1) rotate(1deg) translateY(12px);
+    -o-transform: scale(1.1) rotate(1deg) translateY(12px);
+    -ms-transform: scale(1.1) rotate(1deg) translateY(12px);
+    transform: scale(1.1) rotate(1deg) translateY(12px);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+/* acomodacoes */
+
+/*Carousel*/
+    .carrousel {
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        padding: 1em 0;
+        max-width: 750px;
+        margin: auto;
+    }
+    
+    .carrousel .items {
+        width: 400%;
+        left: 0;
+        padding-left: 0;
+        overflow: hidden;
+        list-style: none;
+        position: relative;
+    
+        -webkit-transition: transform .5s;
+        -moz-transition: transform .5s;
+        -o-transition: transform .5s;
+        transition: transform .5s;
+    }
+    
+    .carrousel .items li {
+        width: 25%;
+        position: relative;
+        float: left;
+    }
+    
+    .carrousel li div {
+        margin: auto;
+        color: #666666;
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+    
+    .carrousel li img {
+        max-width: 100%;
+        object-fit: cover;
+        vertical-align: middle;
+    }
+    
+    .carrousel li div.item {
+        color: #777777;
+        display: block;
+        max-width: 50%;
+    }
+    
+    .name {
+        font-weight: bold;
+    }
+    
+    .description {
+        font-weight: 100;
+    }
+    
+    .carrousel .itemsNavigation {
+        display: block;
+        list-style: none;
+        text-align: center;
+        bottom: 1em;
+        position: relative;
+        width: 104px;
+        /*This width  is the addition of the width of all the navigations dots - So in this case is   104 because the navigation dots are 26px (width:10px and 6px marginleft + 6 px marginright) and there are 4 dots so 4x26=104 */
+        left: 50%;
+        /*Centering de element*/
+        margin-left: -52px;
+        /*adjusting the centering by applying a negative margin of half of the width*/
+    }
+    
+    .carrousel input {
+        display: none;
+    }
+    
+    .carrousel .itemsNavigation label {
+        float: left;
+        margin: 6px;
+        display: block;
+        height: 10px;
+        width: 10px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        border: solid 2px #2980b9;
+        font-size: 0;
+    }
+    
+    /* You have to repeat this with each slide
+    TODO: make it easier with SCSS
+    25% movement 100/items-num
+    */
+    #radio-1:checked~.items {
+        transform: translateX(0%);
+    }
+    
+    #radio-2:checked~.items {
+        transform: translateX(-25%);
+    }
+    
+    #radio-3:checked~.items {
+        transform: translateX(-50%);
+    }
+    
+    #radio-4:checked~.items {
+        transform: translateX(-75%);
+    }
+    
+    
+    .carrousel .itemsNavigation label:hover {
+        cursor: pointer;
+    }
+    
+    /* You have to repeat this with each slide/dot */
+    .carrousel #radio-1:checked~.itemsNavigation label#dotForRadio-1,
+    .carrousel #radio-2:checked~.itemsNavigation label#dotForRadio-2,
+    .carrousel #radio-3:checked~.itemsNavigation label#dotForRadio-3,
+    .carrousel #radio-4:checked~.itemsNavigation label#dotForRadio-4 {
+        background: #2980b9;
+    }
+
+
+
+
+
+
+
+
+/* serviços */
+
+.container1 {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: linear-gradient(#fff , #004bad9a, #011938d3);
+}
+
+img {
+    height: auto;
+    max-width: auto;
+}
+
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cards__item {
+    display: flex;
+    padding: 1rem;
+    @media(min-width: 40rem) {
+        width: 50%;
+    }
+    @media(min-width: 56rem) {
+        width: 33.3333%;
+    }
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.card__image {
+    filter: contrast(100%);
+    text-align: center;
+}
+
+
+.card__content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+
+
+.card__title {
+    color: dark;
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.card__text {
+    flex: 1 1 auto;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+}
+
+
+
+
+
+
+
+/* sobre */
+
+.banner__title1 {
+    font-size: 40px;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    animation: opacity 3s;
+}
+
+.banner__text1 {
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-style: italic;
+    color: black;
+    margin: 0;
+    margin-bottom: 18px;
+    animation: opacity 3s;
+}
+
+.storyimg1 {
+    background-image: url("../img/arealivre.jfif");
+    height: 150px;
+    padding-bottom: 50%;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #1d140b;
+}
