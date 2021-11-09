@@ -1,26 +1,25 @@
-body{
+body {
     background-color: #fffff0;
 }
 
-.logo{
+.logo {
     height: 70px;
-
 }
-nav{
+
+nav {
     z-index: 5;
     background-color: white;
 }
 
-
-.navbar-light .navbar-nav .nav-link{
+.navbar-light .navbar-nav .nav-link {
     color: #38b6ff;
 }
 
-.navbar-nav{
+.navbar-nav {
     text-align: end;
 }
 
-.nav-link{
+.nav-link {
     position: relative;
     display: block;
     margin: 0 10px;
@@ -30,7 +29,7 @@ nav{
     transition: .5s;
 }
 
-.nav-link:before{
+.nav-link:before {
     content: '';
     position: absolute;
     bottom: 10px;
@@ -43,13 +42,13 @@ nav{
     transition: .5s;
 }
 
-.nav-link:hover:before{
+.nav-link:hover:before {
     bottom: -8px;
     left: -8px;
     opacity: 1;
 }
 
-.nav-link:after{
+.nav-link:after {
     content: '';
     position: absolute;
     top: 10px;
@@ -62,20 +61,21 @@ nav{
     transition: .5s;
 }
 
-.nav-link:hover:after{
+.nav-link:hover:after {
     top: -8px;
     right: -8px;
     opacity: 1;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     background: #004bad9a;
     color: black;
 }
 
-.w-100{
+.w-100 {
     height: 100vh;
 }
+
 
 /* imagem de fundo */
 
@@ -89,7 +89,9 @@ nav{
     background-color: #1d140b;
 }
 
+
 /* BANNER */
+
 .banner {
     background-image: url("../img/OCEAN-PALACE.jpg");
     background-color: #000;
@@ -138,26 +140,31 @@ nav{
     animation: opacity 3s;
 }
 
+
 /* destaque */
 
-.title-dest{
+.title-dest {
     display: flex;
     justify-content: center;
 }
 
-.title-dest{
+.title-dest {
     font-size: 40px;
     text-transform: uppercase;
     font-weight: 900;
-    color:#a7abaf82 ;
+    color: #a7abaf82;
     -webkit-background-clip: text;
     background-image: url(https://stoleshnica-fasad.ru/wp-content/uploads/2016/03/Panel-iz-stekla-dlya-kukhni-panoramy-prirody-art.-0003-600x190.jpg);
     animation: water 15s infinite;
 }
 
 @keyframes water {
-    from {background-position: left 0 top 0;}
-    to {background-position: left 1000px top 0;}
+    from {
+        background-position: left 0 top 0;
+    }
+    to {
+        background-position: left 1000px top 0;
+    }
 }
 
 
@@ -165,24 +172,25 @@ nav{
 
 .auto-grid {
     display: grid;
-    grid-template-columns: repeat(
-    auto-fill,
-    minmax(var(--auto-grid-min-size, 14rem), 1fr)
-    );
+    grid-template-columns: repeat( auto-fill, minmax(var(--auto-grid-min-size, 14rem), 1fr));
     grid-gap: var(--auto-grid-gap, 0);
     padding: 0;
 }
 
-.flow > * + * {
+.flow>*+* {
     margin-top: var(--flow-space, 1em);
 }
 
-  /* Composition */
+
+/* Composition */
+
 .team {
     --flow-space: 2em;
 }
 
-  /* Blocks */
+
+/* Blocks */
+
 .profile {
     display: flex;
     flex-direction: column;
@@ -208,39 +216,17 @@ nav{
 }
 
 .profile::before {
-    background: linear-gradient(
-        to top,
-        hsl(0 0% 0% / 0.79) 0%,
-        hsl(0 0% 0% / 0.787) 7.8%,
-        hsl(0 0% 0% / 0.779) 14.4%,
-        hsl(0 0% 0% / 0.765) 20.2%,
-        hsl(0 0% 0% / 0.744) 25.3%,
-        hsl(0 0% 0% / 0.717) 29.9%,
-        hsl(0 0% 0% / 0.683) 34.3%,
-        hsl(0 0% 0% / 0.641) 38.7%,
-        hsl(0 0% 0% / 0.592) 43.3%,
-        hsl(0 0% 0% / 0.534) 48.4%,
-        hsl(0 0% 0% / 0.468) 54.1%,
-        hsl(0 0% 0% / 0.393) 60.6%,
-        hsl(0 0% 0% / 0.31) 68.3%,
-        hsl(0 0% 0% / 0.216) 77.3%,
-        hsl(0 0% 0% / 0.113) 87.7%,
-        hsl(0 0% 0% / 0) 100%
-    );
+    background: linear-gradient( to top, hsl(0 0% 0% / 0.79) 0%, hsl(0 0% 0% / 0.787) 7.8%, hsl(0 0% 0% / 0.779) 14.4%, hsl(0 0% 0% / 0.765) 20.2%, hsl(0 0% 0% / 0.744) 25.3%, hsl(0 0% 0% / 0.717) 29.9%, hsl(0 0% 0% / 0.683) 34.3%, hsl(0 0% 0% / 0.641) 38.7%, hsl(0 0% 0% / 0.592) 43.3%, hsl(0 0% 0% / 0.534) 48.4%, hsl(0 0% 0% / 0.468) 54.1%, hsl(0 0% 0% / 0.393) 60.6%, hsl(0 0% 0% / 0.31) 68.3%, hsl(0 0% 0% / 0.216) 77.3%, hsl(0 0% 0% / 0.113) 87.7%, hsl(0 0% 0% / 0) 100%);
     transition: 300ms opacity linear;
 }
 
 .profile::after {
-    background: linear-gradient(
-        45deg,
-        hsl(5 97% 63% / 0.7) 0,
-        hsl(5 97% 63% / 0) 100%
-    );
+    background: linear-gradient( 45deg, hsl(5 97% 63% / 0.7) 0, hsl(5 97% 63% / 0) 100%);
     opacity: 0;
     transition: 300ms opacity linear;
 }
 
-.profile > * {
+.profile>* {
     z-index: 1;
 }
 
@@ -285,8 +271,10 @@ nav{
     outline-offset: -0.5rem;
 }
 
-.profile:hover :is(h2, p),
-.profile:focus :is(h2, p) {
+.profile:hover :is(h2,
+p),
+.profile:focus :is(h2,
+p) {
     transform: none;
 }
 
@@ -309,14 +297,13 @@ nav{
     transform: scale(1.05) rotate(1deg);
 }
 
+
 /* serviços home */
 
 @import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css';
 @import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css';
 @import 'https://fonts.googleapis.com/css?family=Raleway:100,600';
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300';
-
-
 h1,
 h2,
 h3,
@@ -334,16 +321,16 @@ h6 {
 
 a:link,
 a:active,
-a:visited{
-    color:rgba(255,255,255,1);
+a:visited {
+    color: rgba(255, 255, 255, 1);
 }
 
-a:hover{
-    color:rgba(255,255,255,0.6);
+a:hover {
+    color: rgba(255, 255, 255, 0.6);
 }
 
-.team{
-    margin:40px;
+.team {
+    margin: 40px;
     --flow-space: 2em;
 }
 
@@ -414,7 +401,6 @@ a:hover{
     color: #fff;
     background: rgba(230, 78, 62, 0.9);
     /* Primary color, can be changed via colors.css */
-    
     height: 100%;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -450,133 +436,294 @@ a:hover{
     transition: all 0.4s ease-in-out;
 }
 
+
 /* acomodacoes */
 
+
 /*Carousel*/
-    .carrousel {
-        overflow: hidden;
-        position: relative;
-        text-align: center;
-        padding: 1em 0;
-        max-width: 750px;
-        margin: auto;
-    }
-    
-    .carrousel .items {
-        width: 400%;
-        left: 0;
-        padding-left: 0;
-        overflow: hidden;
-        list-style: none;
-        position: relative;
-    
-        -webkit-transition: transform .5s;
-        -moz-transition: transform .5s;
-        -o-transition: transform .5s;
-        transition: transform .5s;
-    }
-    
-    .carrousel .items li {
-        width: 25%;
-        position: relative;
-        float: left;
-    }
-    
-    .carrousel li div {
-        margin: auto;
-        color: #666666;
-        font-size: 1.3em;
-        font-weight: bold;
-    }
-    
-    .carrousel li img {
-        max-width: 100%;
-        object-fit: cover;
-        vertical-align: middle;
-    }
-    
-    .carrousel li div.item {
-        color: #777777;
-        display: block;
-        max-width: 50%;
-    }
-    
-    .name {
-        font-weight: bold;
-    }
-    
-    .description {
-        font-weight: 100;
-    }
-    
-    .carrousel .itemsNavigation {
-        display: block;
-        list-style: none;
-        text-align: center;
-        bottom: 1em;
-        position: relative;
-        width: 104px;
-        /*This width  is the addition of the width of all the navigations dots - So in this case is   104 because the navigation dots are 26px (width:10px and 6px marginleft + 6 px marginright) and there are 4 dots so 4x26=104 */
-        left: 50%;
-        /*Centering de element*/
-        margin-left: -52px;
-        /*adjusting the centering by applying a negative margin of half of the width*/
-    }
-    
-    .carrousel input {
-        display: none;
-    }
-    
-    .carrousel .itemsNavigation label {
-        float: left;
-        margin: 6px;
-        display: block;
-        height: 10px;
-        width: 10px;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-        border: solid 2px #2980b9;
-        font-size: 0;
-    }
-    
-    /* You have to repeat this with each slide
-    TODO: make it easier with SCSS
-    25% movement 100/items-num
-    */
-    #radio-1:checked~.items {
-        transform: translateX(0%);
-    }
-    
-    #radio-2:checked~.items {
-        transform: translateX(-25%);
-    }
-    
-    #radio-3:checked~.items {
-        transform: translateX(-50%);
-    }
-    
-    #radio-4:checked~.items {
-        transform: translateX(-75%);
-    }
-    
-    
-    .carrousel .itemsNavigation label:hover {
-        cursor: pointer;
-    }
-    
-    /* You have to repeat this with each slide/dot */
-    .carrousel #radio-1:checked~.itemsNavigation label#dotForRadio-1,
-    .carrousel #radio-2:checked~.itemsNavigation label#dotForRadio-2,
-    .carrousel #radio-3:checked~.itemsNavigation label#dotForRadio-3,
-    .carrousel #radio-4:checked~.itemsNavigation label#dotForRadio-4 {
-        background: #2980b9;
-    }
+
+.carrousel {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    padding: 1em 0;
+    max-width: 750px;
+    margin: auto;
+}
+
+.carrousel .items {
+    width: 400%;
+    left: 0;
+    padding-left: 0;
+    overflow: hidden;
+    list-style: none;
+    position: relative;
+    -webkit-transition: transform .5s;
+    -moz-transition: transform .5s;
+    -o-transition: transform .5s;
+    transition: transform .5s;
+}
+
+.carrousel .items li {
+    width: 25%;
+    position: relative;
+    float: left;
+}
+
+.carrousel li div {
+    margin: auto;
+    color: #666666;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.carrousel li img {
+    max-width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.carrousel li div.item {
+    color: #777777;
+    display: block;
+    max-width: 50%;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.description {
+    font-weight: 100;
+}
+
+.carrousel .itemsNavigation {
+    display: block;
+    list-style: none;
+    text-align: center;
+    bottom: 1em;
+    position: relative;
+    width: 104px;
+    /*This width  is the addition of the width of all the navigations dots - So in this case is   104 because the navigation dots are 26px (width:10px and 6px marginleft + 6 px marginright) and there are 4 dots so 4x26=104 */
+    left: 50%;
+    /*Centering de element*/
+    margin-left: -52px;
+    /*adjusting the centering by applying a negative margin of half of the width*/
+}
+
+.carrousel input {
+    display: none;
+}
+
+.carrousel .itemsNavigation label {
+    float: left;
+    margin: 6px;
+    display: block;
+    height: 10px;
+    width: 10px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: solid 2px #2980b9;
+    font-size: 0;
+}
 
 
+/* card 1 */
+
+#radio-1:checked~.items {
+    transform: translateX(0%);
+}
+
+#radio-2:checked~.items {
+    transform: translateX(-25%);
+}
+
+#radio-3:checked~.items {
+    transform: translateX(-50%);
+}
+
+#radio-4:checked~.items {
+    transform: translateX(-75%);
+}
+
+.carrousel .itemsNavigation label:hover {
+    cursor: pointer;
+}
+
+.carrousel #radio-1:checked~.itemsNavigation label#dotForRadio-1,
+.carrousel #radio-2:checked~.itemsNavigation label#dotForRadio-2,
+.carrousel #radio-3:checked~.itemsNavigation label#dotForRadio-3,
+.carrousel #radio-4:checked~.itemsNavigation label#dotForRadio-4 {
+    background: #2980b9;
+}
 
 
+/* //card1 */
 
 
+/* card2 */
+
+#radio-5:checked~.items {
+    transform: translateX(0%);
+}
+
+#radio-6:checked~.items {
+    transform: translateX(-25%);
+}
+
+#radio-7:checked~.items {
+    transform: translateX(-50%);
+}
+
+#radio-8:checked~.items {
+    transform: translateX(-75%);
+}
+
+.carrousel .itemsNavigation label:hover {
+    cursor: pointer;
+}
+
+.carrousel #radio-5:checked~.itemsNavigation label#dotForRadio-5,
+.carrousel #radio-6:checked~.itemsNavigation label#dotForRadio-6,
+.carrousel #radio-7:checked~.itemsNavigation label#dotForRadio-7,
+.carrousel #radio-8:checked~.itemsNavigation label#dotForRadio-8 {
+    background: #2980b9;
+}
+
+
+/* //card2 */
+
+
+/* card3 */
+
+#radio-9:checked~.items {
+    transform: translateX(0%);
+}
+
+#radio-10:checked~.items {
+    transform: translateX(-25%);
+}
+
+#radio-11:checked~.items {
+    transform: translateX(-50%);
+}
+
+#radio-12:checked~.items {
+    transform: translateX(-75%);
+}
+
+.carrousel .itemsNavigation label:hover {
+    cursor: pointer;
+}
+
+.carrousel #radio-9:checked~.itemsNavigation label#dotForRadio-9,
+.carrousel #radio-10:checked~.itemsNavigation label#dotForRadio-10,
+.carrousel #radio-11:checked~.itemsNavigation label#dotForRadio-11,
+.carrousel #radio-12:checked~.itemsNavigation label#dotForRadio-12 {
+    background: #2980b9;
+}
+
+
+/* //card3 */
+
+
+/* card4 */
+
+#radio-13:checked~.items {
+    transform: translateX(0%);
+}
+
+#radio-14:checked~.items {
+    transform: translateX(-25%);
+}
+
+#radio-15:checked~.items {
+    transform: translateX(-50%);
+}
+
+#radio-16:checked~.items {
+    transform: translateX(-75%);
+}
+
+.carrousel .itemsNavigation label:hover {
+    cursor: pointer;
+}
+
+.carrousel #radio-13:checked~.itemsNavigation label#dotForRadio-13,
+.carrousel #radio-14:checked~.itemsNavigation label#dotForRadio-14,
+.carrousel #radio-15:checked~.itemsNavigation label#dotForRadio-15,
+.carrousel #radio-16:checked~.itemsNavigation label#dotForRadio-16 {
+    background: #2980b9;
+}
+
+
+/* //card4 */
+
+
+/* card5 */
+
+#radio-17:checked~.items {
+    transform: translateX(0%);
+}
+
+#radio-18:checked~.items {
+    transform: translateX(-25%);
+}
+
+#radio-19:checked~.items {
+    transform: translateX(-50%);
+}
+
+#radio-20:checked~.items {
+    transform: translateX(-75%);
+}
+
+.carrousel .itemsNavigation label:hover {
+    cursor: pointer;
+}
+
+.carrousel #radio-17:checked~.itemsNavigation label#dotForRadio-17,
+.carrousel #radio-18:checked~.itemsNavigation label#dotForRadio-18,
+.carrousel #radio-19:checked~.itemsNavigation label#dotForRadio-19,
+.carrousel #radio-20:checked~.itemsNavigation label#dotForRadio-20 {
+    background: #2980b9;
+}
+
+
+/* //card5 */
+
+
+/* card6 */
+
+#radio-21:checked~.items {
+    transform: translateX(0%);
+}
+
+#radio-22:checked~.items {
+    transform: translateX(-25%);
+}
+
+#radio-23:checked~.items {
+    transform: translateX(-50%);
+}
+
+#radio-24:checked~.items {
+    transform: translateX(-75%);
+}
+
+.carrousel .itemsNavigation label:hover {
+    cursor: pointer;
+}
+
+.carrousel #radio-21:checked~.itemsNavigation label#dotForRadio-21,
+.carrousel #radio-22:checked~.itemsNavigation label#dotForRadio-22,
+.carrousel #radio-23:checked~.itemsNavigation label#dotForRadio-23,
+.carrousel #radio-24:checked~.itemsNavigation label#dotForRadio-24 {
+    background: #2980b9;
+}
+
+
+/* //card6 */
 
 
 /* serviços */
@@ -584,7 +731,7 @@ a:hover{
 .container1 {
     max-width: 800px;
     margin: 0 auto;
-    background-color: linear-gradient(#fff , #004bad9a, #011938d3);
+    background-color: linear-gradient(#fff, #004bad9a, #011938d3);
 }
 
 img {
@@ -592,7 +739,7 @@ img {
     max-width: auto;
     display: block;
     margin-left: auto;
-    margin-right: auto 
+    margin-right: auto
 }
 
 .cards {
@@ -617,16 +764,16 @@ img {
 .card {
     background-color: white;
     border-radius: 0.25rem;
-    box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     overflow: hidden;
 }
+
 .card__image {
     filter: contrast(100%);
     text-align: center;
 }
-
 
 .card__content {
     display: flex;
@@ -649,7 +796,6 @@ img {
     line-height: 1.5;
     margin-bottom: 1.25rem;
 }
-
 
 
 /* sobre */
@@ -684,80 +830,238 @@ img {
     background-color: #1d140b;
 }
 
+
 /*==================== 
 	Footer 
 ====================== */
 
+
 /* Main Footer */
-footer .main-footer{	padding: 20px 0;	background: #252525;}
-footer ul{	padding-left: 0;	list-style: none;}
+
+footer .main-footer {
+    padding: 20px 0;
+    background: #252525;
+}
+
+footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
 
 /* Copy Right Footer */
-.footer-copyright {	background: #222;	padding: 5px 0;}
-.footer-copyright .logo {    display: inherit;}
-.footer-copyright nav {    float: right;    margin-top: 5px;}
-.footer-copyright nav ul {	list-style: none;	margin: 0;	padding: 0;}
-.footer-copyright nav ul li {	border-left: 1px solid #505050;	display: inline-block;	line-height: 12px;	margin: 0;	padding: 0 8px;}
-.footer-copyright nav ul li a{	color: #969696;}
-.footer-copyright nav ul li:first-child {	border: medium none;	padding-left: 0;}
-.footer-copyright p {	color: #969696;	margin: 2px 0 0;}
+
+.footer-copyright {
+    background: #222;
+    padding: 5px 0;
+}
+
+.footer-copyright .logo {
+    display: inherit;
+}
+
+.footer-copyright nav {
+    float: right;
+    margin-top: 5px;
+}
+
+.footer-copyright nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-copyright nav ul li {
+    border-left: 1px solid #505050;
+    display: inline-block;
+    line-height: 12px;
+    margin: 0;
+    padding: 0 8px;
+}
+
+.footer-copyright nav ul li a {
+    color: #969696;
+}
+
+.footer-copyright nav ul li:first-child {
+    border: medium none;
+    padding-left: 0;
+}
+
+.footer-copyright p {
+    color: #969696;
+    margin: 2px 0 0;
+}
+
 
 /* Footer Top */
-.footer-top{	background: #252525;	padding-bottom: 30px;	margin-bottom: 30px;	border-bottom: 3px solid #222;}
+
+.footer-top {
+    background: #252525;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #222;
+}
+
 
 /* Footer transparent */
-footer.transparent .footer-top, footer.transparent .main-footer{	background: transparent;}
-footer.transparent .footer-copyright{	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3) ;}
+
+footer.transparent .footer-top,
+footer.transparent .main-footer {
+    background: transparent;
+}
+
+footer.transparent .footer-copyright {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
+}
+
 
 /* Footer light */
-footer.light .footer-top{	background: #f9f9f9;}
-footer.light .main-footer{	background: #f9f9f9;}
-footer.light .footer-copyright{	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3) ;}
+
+footer.light .footer-top {
+    background: #f9f9f9;
+}
+
+footer.light .main-footer {
+    background: #f9f9f9;
+}
+
+footer.light .footer-copyright {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3);
+}
+
 
 /* Footer 4 */
-.footer- .logo {    display: inline-block;}
+
+.footer- .logo {
+    display: inline-block;
+}
+
 
 /*==================== 
 	Widgets 
 ====================== */
-.widget{	padding: 20px;	margin-bottom: 40px;}
-.widget.widget-last{	margin-bottom: 0px;}
-.widget.no-box{	padding: 0;	background-color: transparent;	margin-bottom: 40px;
-	box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none;}
-.widget.subscribe p{	margin-bottom: 18px;}
-.widget li a{	color: #ff8d1e;}
-.widget li a:hover{	color: #4b92dc;}
-.widget-title {margin-bottom: 20px;}
-.widget-title span {background: #839FAD none repeat scroll 0 0;display: block; height: 1px;margin-top: 25px;position: relative;width: 20%;}
-.widget-title span::after {background: inherit;content: "";height: inherit;    position: absolute;top: -4px;width: 50%;}
-.widget-title.text-center span,.widget-title.text-center span::after {margin-left: auto;margin-right:auto;left: 0;right: 0;}
-.widget .badge{	float: right;	background: #7f7f7f;}
 
-.typo-light h1, 
-.typo-light h2, 
-.typo-light h3, 
-.typo-light h4, 
-.typo-light h5, 
+.widget {
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.widget.widget-last {
+    margin-bottom: 0px;
+}
+
+.widget.no-box {
+    padding: 0;
+    background-color: transparent;
+    margin-bottom: 40px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+}
+
+.widget.subscribe p {
+    margin-bottom: 18px;
+}
+
+.widget li a {
+    color: #ff8d1e;
+}
+
+.widget li a:hover {
+    color: #4b92dc;
+}
+
+.widget-title {
+    margin-bottom: 20px;
+}
+
+.widget-title span {
+    background: #839FAD none repeat scroll 0 0;
+    display: block;
+    height: 1px;
+    margin-top: 25px;
+    position: relative;
+    width: 20%;
+}
+
+.widget-title span::after {
+    background: inherit;
+    content: "";
+    height: inherit;
+    position: absolute;
+    top: -4px;
+    width: 50%;
+}
+
+.widget-title.text-center span,
+.widget-title.text-center span::after {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.widget .badge {
+    float: right;
+    background: #7f7f7f;
+}
+
+.typo-light h1,
+.typo-light h2,
+.typo-light h3,
+.typo-light h4,
+.typo-light h5,
 .typo-light h6,
 .typo-light p,
 .typo-light div,
 .typo-light span,
-.typo-light small{	color: #fff;}
+.typo-light small {
+    color: #fff;
+}
 
-ul.social-footer2 {	margin: 0;padding: 0;	width: auto;}
-ul.social-footer2 li {display: inline-block;padding: 0;}
-ul.social-footer2 li a:hover {background-color:#ff8d1e;}
-ul.social-footer2 li a {display: block;	height:30px;width: 30px;text-align: center;}
-.btn{background-color: #ff8d1e; color:#fff;}
-.btn:hover, .btn:focus, .btn.active {background: #4b92dc;color: #fff;
--webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
--moz-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
--ms-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
--o-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
--webkit-transition: all 250ms ease-in-out 0s;
--moz-transition: all 250ms ease-in-out 0s;
--ms-transition: all 250ms ease-in-out 0s;
--o-transition: all 250ms ease-in-out 0s;
-transition: all 250ms ease-in-out 0s;
+ul.social-footer2 {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+ul.social-footer2 li {
+    display: inline-block;
+    padding: 0;
+}
+
+ul.social-footer2 li a:hover {
+    background-color: #ff8d1e;
+}
+
+ul.social-footer2 li a {
+    display: block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+}
+
+.btn {
+    background-color: #ff8d1e;
+    color: #fff;
+}
+
+.btn:hover,
+.btn:focus,
+.btn.active {
+    background: #4b92dc;
+    color: #fff;
+    -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 250ms ease-in-out 0s;
+    -moz-transition: all 250ms ease-in-out 0s;
+    -ms-transition: all 250ms ease-in-out 0s;
+    -o-transition: all 250ms ease-in-out 0s;
+    transition: all 250ms ease-in-out 0s;
 }
