@@ -1002,7 +1002,9 @@ footer.light .footer-copyright {
 }
 
 .widget li a {
-    color: #ff8d1e;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .widget li a:hover {
@@ -1069,7 +1071,7 @@ ul.social-footer2 li {
 }
 
 ul.social-footer2 li a:hover {
-    background-color: #ff8d1e;
+    background-color: var(--secondary);
 }
 
 ul.social-footer2 li a {
@@ -1080,7 +1082,7 @@ ul.social-footer2 li a {
 }
 
 .btn {
-    background-color: #ff8d1e;
+    background-color: var(--primary);
     color: #fff;
 }
 
