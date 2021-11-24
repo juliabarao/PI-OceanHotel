@@ -189,9 +189,6 @@ nav {
     text-transform: uppercase;
     font-weight: 900;
     color: var(--secundary);
-    -webkit-background-clip: text;
-    background-image: url(https://stoleshnica-fasad.ru/wp-content/uploads/2016/03/Panel-iz-stekla-dlya-kukhni-panoramy-prirody-art.-0003-600x190.jpg);
-    animation: water 15s infinite;
 }
 
 @keyframes water {
@@ -474,6 +471,9 @@ a:hover {
     transition: all 0.4s ease-in-out;
 }
 
+.br {
+    border-radius: 20px;
+}
 
 /* acomodacoes */
 
@@ -1101,8 +1101,4 @@ ul.social-footer2 li a {
     -ms-transition: all 250ms ease-in-out 0s;
     -o-transition: all 250ms ease-in-out 0s;
     transition: all 250ms ease-in-out 0s;
-}
-
-.gabriel {
-    border-radius: 15px;
 }
